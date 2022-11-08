@@ -1,0 +1,50 @@
+.navbar1 {
+    min-height: 500px;
+    background-color: #F1F1F1;
+    line-height: 50px;
+
+    a {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 23.45px;
+        color: #7E7E7E;
+    }
+
+    .foot {
+        width: 380px;
+        height: 330px;
+    }
+
+    .chiziq {
+        height: 0px;
+        width: 460px;
+        border-radius: nullpx;
+        border: 1px solid #C4C4C4;
+        margin-top: 15px;
+        background-color: #7E7E7E;
+
+    }
+
+    .icon {
+        display: flex;
+        gap: 20px;
+        margin-top: 80px;
+    }
+
+    .foot1 {
+        width: 126px;
+        height: 330px;
+    }
+
+
+}
+
+.navbar2 {
+    background-color: #F1F1F1;
+
+    p {
+        height: 50px;
+        text-align: center;
+        color: #7E7E7E;
+    }
+}
