@@ -1,7 +1,7 @@
 header {
   background-color: #FFFFFF;
   height: 92px;
-  width: 1440px;
+  max-width: 1440px;
   margin: 0 auto;
   position: -webkit-sticky;
   position: sticky;
@@ -17,8 +17,18 @@ header .iconka {
 }
 header .iconka .dropdown {
   display: none;
+  position: relative;
 }
-
+header .iconka .dropdown .dropdown-menu {
+  top: 100%;
+  right: 0;
+  background-color: #FFFFFF;
+  padding: 0 0 0 10px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  box-shadow: 0 0 20px #aaa;
+  display: none;
+}
 .container .box {
   width: 100%;
   height: 100%;
@@ -88,7 +98,7 @@ a {
 }
 
 .container {
-  width: 1440px;
+  max-width: 1440px;
   margin: 0 auto;
   background-color: #000000;
 }
@@ -100,17 +110,18 @@ a {
   width: 100%;
   height: 100%;
   padding: 2rem 0;
+  margin: 0 2rem;
 }
 .container .pag2 {
-  line-height: 50px;
+  line-height: 35px;
   margin-left: 6rem;
 }
 .container h2 {
   color: #FFFFFF;
-  width: 617px;
+  max-width: 617px;
   height: 350px;
   font-weight: 900;
-  line-height: 80px;
+  line-height: 50px;
   font-size: 40px;
   margin: 0 18rem 0 6rem;
 }
@@ -181,29 +192,38 @@ a {
   color: #7E7E7E;
 }
 
-@media (max-width: 375px) {
-  header div {
-    max-width: 1400px;
+@media (max-width: 575px) {
+  header {
+    width: 565px;
+    padding: 0 50px;
   }
-  header div ul a {
+  header div ul.nav a {
     display: none;
   }
-  header div .dropdown {
+  header div .iconka .dropdown {
     display: block;
   }
   .container {
-    padding: 30px;
+    width: 565px;
+    padding: 0 30px;
     display: flex;
     flex-direction: column;
   }
-  .container .box p {
+  .container h2 {
     font-size: 30px;
+  }
+  .container .box p {
+    font-size: 20px;
   }
   .container .box h1 {
-    font-size: 50px;
+    font-size: 30px;
+  }
+  .container .box1 {
+    padding: 5rem 0;
   }
   .container .box1 p {
-    font-size: 30px;
+    font-size: 20px;
+    margin-right: 5rem;
   }
   .container .home1 {
     flex-wrap: wrap;
@@ -217,25 +237,132 @@ a {
     width: 100%;
   }
   .container .home1 div h4 {
-    font-size: 50px;
-    width: 100%;
+    font-size: 20px;
+    width: 50%;
   }
   .container .home1 div h3 {
-    font-size: 50px;
+    font-size: 20px;
   }
   .container .home1 div p {
-    font-size: 50px;
+    font-size: 20px;
   }
   .container .home1 div img {
     width: 25%;
   }
   .container .yoz {
-    font-size: 80px;
+    font-size: 30px;
   }
   .container .foot {
-    width: 80%;
+    width: 30%;
+    height: 50%;
+  }
+  .container .foot .chiziq {
+    width: 100%;
   }
   .container .foot1 {
-    width: 80%;
+    width: 30%;
+  }
+}
+@media (min-width: 575px) and (max-width: 1000px) {
+  .container {
+    width: 990px;
+    padding: 0 20px;
+  }
+  .container h2 {
+    font-size: 30px;
+    margin: 5rem 6rem;
+    padding: 2rem 0;
+    line-height: 60px;
+  }
+  .container .box {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+  }
+  .container .box p {
+    font-size: 10px;
+  }
+  .container .box1 {
+    margin: 0 5rem;
+  }
+  .container .box1 p {
+    margin: 0;
+  }
+  .container .yoz {
+    font-size: 30px;
+  }
+  .container .chiziq {
+    width: 100%;
+  }
+  header {
+    width: 990px;
+    padding: 0 50px;
+  }
+  header li {
+    display: none;
+  }
+}
+@media (min-width: 1000px) and (max-width: 1400px) {
+  .container {
+    width: 1390px;
+    padding: 0 30px;
+    flex-direction: column;
+  }
+  .container h2 {
+    font-size: 50px;
+    line-height: 80px;
+  }
+  .container .box1 {
+    padding: 5rem 0;
+  }
+  .container .box1 p {
+    font-size: 30px;
+    line-height: 60px;
+  }
+  .container .pag {
+    font-size: 30px;
+  }
+  .container h1 {
+    font-size: 60px;
+  }
+  .container .pag1 {
+    font-size: 30px;
+  }
+  .container .foot {
+    width: 90%;
+    height: 30%;
+  }
+  .container .foot a {
+    font-size: 30px;
+  }
+  .container .foot1 {
+    width: 90%;
+    line-height: 80px;
+    height: 100%;
+  }
+  .container .foot1 a {
+    font-size: 30px;
+  }
+  .container h4 {
+    font-size: 30px;
+  }
+  .container p {
+    font-size: 30px;
+  }
+  header {
+    width: 1390px;
+    padding: 0 30px;
+  }
+  header h2 {
+    font-size: 40px;
+  }
+  header li {
+    font-size: 20px;
+  }
+  header p {
+    font-size: 20px;
+  }
+  header .iconka {
+    font-size: 20px;
   }
 }/*# sourceMappingURL=main.css.map */

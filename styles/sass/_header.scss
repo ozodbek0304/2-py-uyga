@@ -1,7 +1,7 @@
 header {
     background-color: #FFFFFF;
     height: 92px;
-    width: 1440px;
+    max-width: 1440px;
     margin: 0 auto;
     position: sticky;
     z-index: 999;
@@ -14,11 +14,26 @@ header {
     .iconka {
         display: flex;
         gap: 1rem;
-
-        .dropdown {
-            display: none;
-
+    .dropdown{
+        display:none;
+        position: relative;
+        .dropdown-menu{
+            //position: absolute;
+            top:100%;
+            right: 0;
+            background-color:#FFFFFF;
+            padding: 0 0 0 10px;
+            border: 1px solid #333;
+            border-radius: 5px;
+            box-shadow: 0 0 20px #aaa;
+           display: none;
+           
         }
+                 input[type="checkbox"] :checked + .dropdown-menu {
+                     //display: block;
+        
+                 }
+    }
     }
 }
 
